@@ -40,7 +40,7 @@
 
 5. In application.properties expose jolokia and hawtio endpoints:
 
-management.endpoints.web.exposure.include=hawtio,jolokia
+    management.endpoints.web.exposure.include=hawtio,jolokia
 
 6. mvn clean spring-boot:run
 
