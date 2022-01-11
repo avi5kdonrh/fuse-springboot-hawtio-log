@@ -8,7 +8,7 @@
  <dependency>
    <groupId>io.hawt</groupId>
    <artifactId>hawtio-insight-log</artifactId>
-   <version>1.5.11</version>
+   <version>1.5.12</version>
 </dependency>
 
 3. Exclude the spring-boot-starter-logging from spring-boot-starter-web
@@ -38,7 +38,11 @@
         return log4jLogQuery;
     }
 
-5. mvn clean spring-boot:run
+5. In application.properties expose jolokia and hawtio endpoints:
 
-6. Go to http://localhost:10001/hawtio/ and you should notice the Logs tab
+management.endpoints.web.exposure.include=hawtio,jolokia
+
+6. mvn clean spring-boot:run
+
+7. Go to http://localhost:8080/actuator/hawtio/ and you should notice the Logs tab
 
