@@ -4,7 +4,7 @@
   <groupId>com.yourcompany.newapp</groupId>
   <artifactId>outrageous-waves</artifactId>
   <version>1.0.0</version>
-  <name>Fuse :: Boosters :: Rest HTTP</name>
+  <name>Fuse2 :: Boosters :: Rest HTTP</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
